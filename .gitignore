@@ -44,3 +44,6 @@ Temporary Items
 .apdisk
 /TestJSP/nbproject/private/
 /TestJSP2/nbproject/private/
+/test/nbproject/private/
+/test/build/
+/TestJSP/build/
