@@ -2,15 +2,23 @@
 <web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
     <servlet>
         <servlet-name>WelcomeServlet</servlet-name>
-        <servlet-class>WelcomeServlet</servlet-class>
+        <servlet-class>com.deitel.servlet.WelcomeServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>WelcomeServlet2</servlet-name>
-        <servlet-class>WelcomeServlet2</servlet-class>
+        <servlet-class>com.deitel.servlet.WelcomeServlet2</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>WelcomeServlet3</servlet-name>
-        <servlet-class>WelcomeServlet3</servlet-class>
+        <servlet-class>com.deitel.servlet.WelcomeServlet3</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RedirectServlet</servlet-name>
+        <servlet-class>com.deitel.servlet.RedirectServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CookieServlet</servlet-name>
+        <servlet-class>com.deitel.servlet.CookieServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>WelcomeServlet</servlet-name>
@@ -23,6 +31,14 @@
     <servlet-mapping>
         <servlet-name>WelcomeServlet3</servlet-name>
         <url-pattern>/WelcomeServlet3</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RedirectServlet</servlet-name>
+        <url-pattern>/RedirectServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CookieServlet</servlet-name>
+        <url-pattern>/CookieServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
